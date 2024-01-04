@@ -3,13 +3,11 @@ $(document).ready(function () {
     $('#aparecerFormulario').click(function() {
         $('form').fadeIn(2000)
         $('li').fadeIn()
-        // ao clicar no botão do header o formulário aparece
     })
 
     $('#minimizarFormulario').click(function () {
         $('form').fadeOut()
-        $('li').fadeOut()
-        // ao clicar no botão cancelar do formulário o mesmo desaparece
+        $('li').fadeOut()  
     })
 
     $('form').submit(function (e) {
