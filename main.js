@@ -1,36 +1,29 @@
-function adicionarContato() {
-    const nome = document.getElementById('nome').value;
-    const telefone = document.getElementById('telefone').value;
+$(document).ready(function () {
 
-    if (nome && telefone) {
-        const tabelaContatos = document.getElementById('tabelaContatos');
-        const tbody = tabelaContatos.querySelector('tbody');
+    $('#aparecerFormulario').click(function() {
+        $('form').fadeIn(2000)
+        $('li').fadeIn()
+        // ao clicar no botão do header o formulário aparece
+    })
 
-        const linhasExistentes = tbody.getElementsByTagName('tr');
-        let telefoneRepetido = false;
+    $('#minimizarFormulario').click(function () {
+        $('form').fadeOut()
+        $('li').fadeOut()
+        // ao clicar no botão cancelar do formulário o mesmo desaparece
+    })
 
-        for (const linha of linhasExistentes) {
-            const colunaTelefone = linha.getElementsByTagName('td')[1].textContent;
-
-            if (colunaTelefone === telefone) {
-                telefoneRepetido = true;
-                break;
-            }
+    $('form').submit(function (e) {
+        e.preventDefault();
+        const novaTarefa = $('form input').val();
+        if (novaTarefa) {
+            $('ul').append('<li>' + novaTarefa + '</li>');
+            $('form input').val('');
         }
+    });
+});
 
-        if (telefoneRepetido) {
-            alert('Telefone já existe na agenda.');
-        } else {
-            const novaLinha = document.createElement('tr');
-            novaLinha.innerHTML = `<td>${nome}</td><td>${telefone}</td>`;
-            tbody.appendChild(novaLinha);
-
-            document.getElementById('nome').value = '';
-            document.getElementById('telefone').value = '';
-        }
-    } else {
-        alert('Por favor, preencha todos os campos.');
-    }
-}
-
-
+$(document).ready(function () {
+    $('ul').on('click', 'li', function () {
+        $(this).toggleClass('concluido');
+    });
+});
