@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
     $('#aparecerFormulario').click(function() {
-        $('form').fadeIn(2000)
-        $('li').fadeIn()
+        $('form').fadeIn(1000)
+        $('li').fadeIn(2000)
     })
 
     $('#minimizarFormulario').click(function () {
