@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de tarefas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="Primeirocabeçalho">
+
+        <img src="setaParaBaixo.png" alt="seta Para Baixo">
+        <h1>Gerenciador de tarefas</h1>
+        <img src="setaParaBaixo.png" alt="seta Para Baixo">
+
+        <button type="button" id="aparecerFormulario">Iniciar</button>
+    </header>
+
+    <form>
+        <h2>Vamos adicionar taferas</h2>
+        <input type="text"   required placeholder="Adicione sua tarefa">
+        <button type="submit" id="addTarefas">Cadastrar +</button>
+        <button type="reset" id="minimizarFormulario">Cancelar</button>
+    </form>
+
+    <ul>
+        <h1 class="tituloTabela">Tabela de Tarefas</h1>
+        <li> ---- </li>
+    </ul>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

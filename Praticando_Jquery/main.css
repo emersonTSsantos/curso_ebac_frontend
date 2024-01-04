@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@400;700&family=Rubik+Doodle+Shadow&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-style: italic;
+    background-image: url(/set-white-clean-crumpled-papers-260nw-2289707717.webp)
+}
+
+.Primeirocabeçalho {
+    background-color: chocolate;
+    padding: 16px 0;
+    color: rgb(24, 8, 11);
+    display: flex;
+    align-items: center;
+    border-bottom: 10px solid #7e3105;
+    border-top: 10px solid #7e3105;
+    justify-content: center;
+    text-transform: uppercase;
+    
+    
+}
+
+.Primeirocabeçalho button {
+    background-color: #b4551ed2;
+    margin-left: 16px;
+    padding: 15px;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    cursor: pointer;
+
+    
+}
+
+.Primeirocabeçalho button:hover {
+    background-color: #7e3105;
+}
+
+.Primeirocabeçalho img{
+    width: 50px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+form button {
+    font-family: 'Acme', sans-serif;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+form  {
+    text-align: center;
+    background-color: chocolate;
+    text-align: center;
+    padding: 30px;
+    display: none;
+}
+
+form h2 {
+    padding-bottom: 6px;
+    font-size: 28px;
+}
+
+form input{
+    font-size: 26px;
+    align-items: center;
+    
+}
+
+#addTarefas {
+    background-color: rgb(45, 184, 45);
+    padding-right: 5px;
+}
+
+#minimizarFormulario {
+    background-color: rgb(182, 19, 19);
+    padding-right: 5px;
+}
+
+.tituloTabela {
+    text-align: center;
+    background-color: #db8e61;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    transition: background-color 0.3s ease;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-family: 'Bungee', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    position: relative;
+    text-align: center;
+    background-color: #f35a0293;
+    margin: 10px;
+    padding: 18px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+ul li.concluido {
+    text-decoration: line-through;
+    background-color: #a9a9a95b;
+}
+
+ul li:hover {
+    background-color: #e59866;
+}
+
+ul li::after {
+    content: "\1F5D1"; 
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 25px;
+    color: #fff;
+}
+
+ul li:hover::after {
+    color:red;
+}
+
