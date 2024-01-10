@@ -10,14 +10,12 @@
     padding: 50px;
 }
 
-/* Estilo do título do formulário */
 #contato h1 {
     text-align: center;
     font-size: 36px;
     margin-bottom: 30px;
 }
 
-/* Estilo dos campos do formulário */
 .form-campo {
     margin-left: 465px;
     margin-bottom: 20px;

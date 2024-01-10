@@ -1,19 +1,14 @@
 $(document).ready(function() {
-    // Máscara para o campo de telefone
     $('#telefone').mask('(00) 0000-00000', { placeholder: '(00) 0000-0000' });
 
-    // Máscara para o campo de CPF
     $('#cpf').mask('000.000.000-00', { placeholder: '000.000.000-00' });
 
-    // Máscara para o campo de CEP
     $('#cep').mask('00000-000', { placeholder: '00000-000' });
 
-    // Adicione o restante do seu código aqui
 
-    // Exemplo de validação usando o plugin jQuery Validate
     $('form').validate({
         rules: {
-            nome: { required: true },
+            nome: { required: true },  
             telefone: { required: true },
             email: { required: true, email: true },
             cpf: { required: true },
@@ -29,7 +24,7 @@ $(document).ready(function() {
             cep: 'Este campo é obrigatório.'
         },
         submitHandler: function(form) {
-            // Lógica de envio do formulário
+
             console.log('Formulário enviado com sucesso!');
         },
         invalidHandler: function(evento, validador) {
