@@ -1,113 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebac shoes</title>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header >
-        <div class="container-header">
-            <h1>EBAC shoes</h1>
-        
+    <div class="container">
 
-        <nav class="link">
-            <ul>
-                <li>
-                    <a href="#sobre">Sobre a loja</a>
-                </li>
-    
-                <li>
-                    <a href="#produtos">Produtos</a>
-                </li>
-            </ul>
-            
-        </nav>
+        <div class="row">
+
+            <div class="col">
+
+                <h2>Formulário de Cadastro</h2>
+                <form id="cadastro-form">
+
+                    <label class="form-label" for="nome">Nome:</label>
+                    <input class="form-control" type="text" id="nome" name="nome" required placeholder="Nome Completo">
+
+                    <label class="form-label" for="email" id="texto">E-mail:</label>
+                    <input class="form-control" type="email" id="email" name="email" required placeholder="Seu E-mail"> 
+
+                    <label class="form-label" for="telefone">Seu telefone:</label>
+                    <input class="form-control" type="tel" id="telefone" name="telefone" required>
+
+                    <div class="form-check form-switch">
+                        <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do site</label>
+                        <input class="form-check-input" type="checkbox" id="aceito-termos" name="aceito-termos" required >
+                    </div>
+
+                    <button class="btn btn-success" type="submit">Enviar</button>
+                </form>
+
+            </div>
+
+        </div>
     </div>
-    </header>
 
-    <section id="sobre">
-        <div class="container-sobre">
-            <div class="coluna-img">
-                <img src="/imagens/imagem-loja.jpg" alt="Imagem da Loja">
-            </div>
-            <div class="coluna-texto">
-                <h2>Sobre a Loja</h2>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt ea non ad reprehenderit quidem officia aspernatur voluptatibus, aut quos quia architecto? Voluptatem vero voluptate suscipit laboriosam cum inventore deleniti perferendis.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem aspernatur laudantium illum assumenda repellendus? Necessitatibus ratione id accusamus explicabo possimus aliquam, modi tempora a, adipisci doloribus alias doloremque optio. Corporis?
-                </p>
-            </div>
-        </div>
-    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery.mask.min.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/messages_pt_BR.min.js"></script>
+    <script src="main.js"></script>
 
-    <section>
-        <div class="container-produtos">
-
-            <h2>Produtos</h2>
-
-        </div>
-    </section>
-
-    <main> 
-    <section id="produtos">
-    
-        <div class="produtos">
-            <article class="produto">
-                <a href="/imagens/mizuno-prata-vermelho.webp">
-                <img src="/imagens/mizuno-prata-vermelho.webp" alt="imegem Base">
-                </a>
-                <h2>
-                    Tênis Mizuno Wave Hawk 2 masculino 
-                </h2>
-                <p> Tênis Mizuno Wave Hawk 2 disponivel 
-                    nos tamanhos 37 38, 39, 40 e 42</p>
-                <button type="submit"> Adicionar ao carrinho</button>
-            </article>
-
-            <article class="produto">
-                <a href="/imagens/nike.webp">
-                <img src="/imagens/nike.webp" alt="imegem Base">
-                </a>
-                <h2>
-                    Tênis Nike Dual Fusion TR 6
-                </h2>
-                <p class="produtoDois">Tênis Nike Dual Fusion TR 6 disponivel 
-                    nos tamanhos 37 38, 39, 40 e 42</p>
-                    <button type="submit"> Adicionar ao carrinho</button>
-            </article>
-
-            <article class="produto">
-                <a href="/imagens/asics-azul.webp">
-                <img src="/imagens/asics-azul.webp" alt="imegem Base">
-                </a>
-                <h2>
-                    Tênis Mizuno Wave Hawk 2 masculino 
-                </h2>
-                <p>Tênis Mizuno Wave Hawk 2 disponivel 
-                    nos tamanhos 37 38, 39, 40 e 42</p>
-                    <button type="submit"> Adicionar ao carrinho</button>
-            </article>
-
-            <article class="produto">
-                <a href="/imagens/mizuno-azul.webp">
-                <img src="/imagens/mizuno-azul.webp" alt="imegem Base">
-                </a>
-                <h2>
-                    Tênis Mizuno Wave Prime 13 masculino 
-                </h2>
-                <p>Tênis Mizuno Wave Prime 13 disponivel 
-                    nos tamanhos 37 38, 39, 40 e 42</p>
-                    <button type="submit"> Adicionar ao carrinho</button>
-            </article>
-        
-            
-        </div>
-    </section>
-</main>
 </body>
+
 </html>
