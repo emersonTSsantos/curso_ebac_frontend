@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function(){
         fetch('https://api.github.com/users/emersonTSsantos')
             .then(function(res) {
                 if (!res.ok) {
-                    throw new Error('Network response was not ok');
+                    throw new Error('A resposta da rede não foi boa');
                 }
                 return res.json();
             })
@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', function(){
                 linkElement.href = json.html_url;
             })
             .catch(function(error) {
-                console.error('There was a problem with the fetch operation:', error);
+                console.error('Houve um problema com a operação de busca:', error);
             });
     } catch (error) {
-        console.error('An error occurred during the fetch operation:', error);
+        console.error('Ocorreu um erro durante a operação de busca:', error);
     }
 });
